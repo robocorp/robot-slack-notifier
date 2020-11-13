@@ -1,17 +1,7 @@
 tasks:
-  entrypoint:
-    command:
-      - python
-      - -m
-      - robot
-      - --report
-      - NONE
-      - --outputdir
-      - output
-      - --logtitle
-      - Task log
-      - tasks.robot
-
+  Send Message:
+    robotTaskName: Send Message
+ 
 condaConfigFile: conda.yaml
 artifactsDir: output
 PATH:

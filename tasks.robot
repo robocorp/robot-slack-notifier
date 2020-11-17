@@ -15,5 +15,3 @@ Send Message
     Notify Slack  ${message}  channel=%{CHANNEL}  webhook_url=${secrets}[WEBHOOK]
 
 
-
-

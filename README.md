@@ -2,7 +2,9 @@
 
 Robot for sending Slack notifications
 
-## Environment variables:
+## Configuration
+
+Configure following environment variables:
 
 #### MESSAGE
 

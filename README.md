@@ -19,7 +19,7 @@ Robot for sending Slack notifications
 
 #### CHANNEL
 
-Slack channel name e.g. ```test-slack-channel```
+Slack channel name e.g. ```general```
 
 #### SECRET
 

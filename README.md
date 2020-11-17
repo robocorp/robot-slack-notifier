@@ -1,11 +1,26 @@
-# robot-slack-notifier
+# Slack Notifier Robot
 
 Robot for sending Slack notifications
 
-Environment variables:
+## Environment variables:
 
-| Environment variable  | Usage |
-| ------------- | ------------- |
-| MESSAGE | Message can be:<br>- Literal message to be send e.g. Hello World<br>- Python expression where Work Item variables and environment variables are in namespace e.g. "Email from %s processed by (%s)" % (from, PYTHON_EXE) |
-| SLACK_CHANNEL  | Slack channel name  |
-| SLACK_SECRET  | Name of Robocorp vault's secret that holds the Slack webhook in key WEBHOOK |
+#### MESSAGE
+
+1. Literal notification string 
+
+
+    MESSAGE=Hello World
+
+2. Python expression with Work Item- and Environment- variables in namespace
+
+
+    MESSAGE="Environment variable: %s, Work Item variable: %s" % (PYTHON_EXE, my_var)
+
+
+#### CHANNEL
+
+Slack channel name e.g. ```test-slack-channel```
+
+#### SECRET
+
+Name of the Robocorp Vault's secret that holds the Slack Webhook in key ```WEBHOOK```
